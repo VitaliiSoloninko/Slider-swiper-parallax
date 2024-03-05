@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Slider Swiper with parallax</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<h1 class="title">Swiper and Parallax</h1>
+			<div class="image-slider swiper-container swiper">
+				<!-- Слайдер -->
+				<div class="image-slider__wrapper swiper-wrapper">
+					<div class="image-slider__slide swiper-slide">
+						<div class="image-slider__image">
+							<img src="img/01.jpg" alt="Картинка" />
+						</div>
+						<div
+							data-swiper-parallax-x="-200%"
+							data-swiper-parallax-duration="1000"
+							data-swiper-parallax-opacity="0"
+							data-swiper-parallax-scale="0"
+							class="image-slider__content"
+						></div>
+					</div>
+					<div class="image-slider__slide swiper-slide">
+						<div class="image-slider__image">
+							<img src="img/02.jpg" alt="Картинка" />
+						</div>
+						<div
+							data-swiper-parallax-x="-200%"
+							data-swiper-parallax-duration="1000"
+							data-swiper-parallax-opacity="0"
+							data-swiper-parallax-scale="0"
+							class="image-slider__content"
+						></div>
+					</div>
+					<div class="image-slider__slide swiper-slide">
+						<div class="image-slider__image">
+							<img src="img/03.jpg" alt="Картинка" />
+						</div>
+						<div
+							data-swiper-parallax-x="-200%"
+							data-swiper-parallax-duration="1000"
+							data-swiper-parallax-opacity="0"
+							data-swiper-parallax-scale="0"
+							class="image-slider__content"
+						></div>
+					</div>
+				</div>
+				<!-- Добавляем если нам нужны стрелки управления -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				<!-- Добавляем, если нам нужна пагинация -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
